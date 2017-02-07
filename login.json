@@ -70,7 +70,7 @@
               "action": {
                 "type": "$network.request",
                 "options": {
-                  "url": "https://jasonbase.com/things/P7Z.json",
+                  "url": "jasonetteDemo/demo.json",
                   "data_type": "html"
                 },
                 "success": {
@@ -85,7 +85,7 @@
                   "success": {
                     "type": "$href",
                     "options": {
-                      "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/login.json",
+                      "url": "jasonetteDemo/demo.json",
                       "transition": "replace"
                     }
                   }
