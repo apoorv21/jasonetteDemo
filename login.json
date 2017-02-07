@@ -26,11 +26,12 @@
               "type": "textfield",
               "name": "email",
               "style": {
-                "size": "20",
-                "color": "#ffffff",
-                "background": "#575757",
-                "font": "HelveticaNeue-Bold",
-               "padding": "20"
+               "size": "20",
+            "color": "#8bb92d",
+                "tint color":"#ffffff",
+            "font": "HelveticaNeue-Bold",
+            "background": "#575757",
+            "padding": "20"
               },
               "placeholder": "enter email",
             },
@@ -44,11 +45,11 @@
               "placeholder": "enter password",
               "style": {
                 "size": "20",
-                "color": "#ffffff",
-                "background": "#575757",
-                "font": "HelveticaNeue-Bold",
-                "padding": "20",
-                "secure": "true"
+            "color": "#8bb92d",
+            "font": "HelveticaNeue-Bold",
+            "background": "#575757",
+            "padding": "20",
+            "secure": "true"
               }
             },
             {
@@ -63,6 +64,7 @@
                 "font": "HelveticaNeue-Bold",
                 "size": "20",
                 "padding": "10",
+                 "background": "#8bb92d",
                 "color": "#ffffff"
               },
               "text": "Sign in >",
