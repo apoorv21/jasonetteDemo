@@ -46,7 +46,6 @@
                 "size": "20",
                 "color": "#ffffff",
                 "font": "HelveticaNeue-Bold",
-                "background": "#575757",
                 "padding": "20",
                 "secure": "true"
               }
@@ -63,7 +62,6 @@
                 "font": "HelveticaNeue-Bold",
                 "size": "20",
                 "padding": "10",
-                "background": "#8bb92d",
                 "color": "#ffffff"
               },
               "text": "Sign in >",
