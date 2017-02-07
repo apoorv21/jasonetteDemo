@@ -1,7 +1,16 @@
 {
   "$jason": {
     "head": {
-      "title": "{ ˃̵̑ᴥ˂̵̑}",
+      "title": "Welcome Page",
+       "type": "image",
+          "style": {
+            "width": "100",
+            "height": "100"
+          },
+      "decription":"An app designed to collect information from moviegoers for a marketing promotion.\n\n  The Movie Survey app can be used by any marketing team that needs to collect information from consumers. The app uses a simple form with dropdown menus for easy data collection. 
+",
+      "icon":"jasonetteDemo/fsimage.png",
+      
       "actions": {
         "$foreground": {
           "type": "$reload"
@@ -14,11 +23,11 @@
     "body": {
       "header": {
         "style": {
-          "background": "#ffffff"
+          "background": "#000000"
         }
       },
       "style": {
-        "background": "#ffffff",
+        "background": "#000000",
         "border": "none"
       },
       "sections": [
