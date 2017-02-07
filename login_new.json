@@ -25,6 +25,7 @@
           "style": {
             "size": "20",
             "color": "#8bb92d",
+            "tint":"#ffffff",
             "font": "HelveticaNeue-Bold",
             "background": "#575757",
             "padding": "20"
