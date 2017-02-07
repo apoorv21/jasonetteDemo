@@ -1,0 +1,15 @@
+{
+  "$jason": {
+    "head": {
+      "title": "MOVIE SURVEYYYYYY",
+      "description": "An app designed to collect information from moviegoers for a marketing promotion.\n\n This app is designed for a marketing team to administer a quick survey to moviegoers in order to collect information about a potential upcoming marketing promotion.",
+      "offline": "true",
+      "style": {
+        "font": "HelveticaNeue",
+        "size": "20",
+        "color": "#ffffff",
+        "background": "#000000"
+      }
+    }
+  }
+}
