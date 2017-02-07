@@ -1,110 +1,158 @@
 {
   "$jason": {
     "head": {
-      "title": "{ ˃̵̑ᴥ˂̵̑}",
-      "actions": {
-        "$foreground": {
-          "type": "$reload"
-        },
-        "$pull": {
-          "type": "$reload"
-        }
-      }
+      "title": "Music Survey Login"
     },
     "body": {
-      "header": {
-        "style": {
-          "background": "#ffffff"
-        }
-      },
       "style": {
-        "background": "#ffffff",
-        "border": "none"
+        "border": "none",
+        "background": "#646464"
+      },
+      "header": {
+        "title": "Music Survey Login",
+        "style": {
+          "background": "#646464",
+          "color": "#ffffff"
+        }
       },
       "sections": [
         {
           "items": [
             {
-              "type": "vertical",
+              "type": "space",
+              "height": "10"
+            },
+            {
+              "type": "textfield",
+              "name": "email",
               "style": {
-                "padding": "30",
-                "spacing": "20",
-                "align": "center"
+                "size": "20",
+                "color": "#8bb92d",
+                "font": "HelveticaNeue-Bold",
+                "background": "#575757",
+                "padding": "20"
               },
-              "components": [
-                {
-                  "type": "label",
-                  "text": "It's ALIVE!",
-                  "style": {
-                    "align": "center",
-                    "font": "Courier-Bold",
-                    "size": "18"
+              "placeholder": "enter email"
+            },
+            {
+              "type": "space",
+              "height": "5"
+            },
+            {
+              "type": "textfield",
+              "name": "password",
+              "placeholder": "enter password",
+              "style": {
+                "size": "20",
+                "color": "#8bb92d",
+                "font": "HelveticaNeue-Bold",
+                "background": "#575757",
+                "padding": "20",
+                "secure": "true"
+              }
+            },
+            {
+              "type": "space",
+              "height": "5"
+            },
+            {
+              "type": "label",
+              "style": {
+                "width": "100%",
+                "align": "right",
+                "font": "HelveticaNeue-Bold",
+                "size": "20",
+                "padding": "10",
+                "background": "#8bb92d",
+                "color": "#ffffff"
+              },
+              "text": "Sign in >",
+              "action": {
+                "type": "$network.request",
+                "options": {
+                  "url": "https://jasonbase.com/things/P7Z.json",
+                  "data_type": "html"
+                },
+                "success": {
+                  "type": "$session.set",
+                  "options": {
+                    "domain": "ROOT",
+                    "header": {
+                      "X-User-Email": "{{$jason.email}}",
+                      "X-User-Token": "{{$jason.authentication_token}}"
+                    }
+                  },
+                  "success": {
+                    "type": "$href",
+                    "options": {
+                      "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/login.json",
+                      "transition": "replace"
+                    }
                   }
                 },
-                {
-                  "type": "label",
-                  "text": "----This is a demo app. You can make your own app by changing the url inside settings.plist---",
-                  "style": {
-                    "align": "center",
-                    "font": "Courier",
-                    "padding": "30",
-                    "size": "14"
-                  }
-                },
-                {
-                  "type": "label",
-                  "text": "{ ˃̵̑ᴥ˂̵̑}",
-                  "style": {
-                    "align": "center",
-                    "font": "HelveticaNeue-Bold",
-                    "size": "50"
+                "error": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Error",
+                    "description": "Something went wrong. Please check if you entered your email and password correctly"
                   }
                 }
-              ]
-            },
-            {
-              "type": "label",
-              "style": {
-                "align": "right",
-                "padding": "10",
-                "color": "#000000",
-                "font": "HelveticaNeue",
-                "size": "12"
-              },
-              "text": "Check out Live DEMO",
-              "href": {
-                "url": "https://www.google.com",
-                "fresh": "true"
               }
             },
             {
               "type": "label",
               "style": {
-                "align": "right",
+                "size": "16",
+                "font": "HelveticaNeue-Bold",
+                "text": "or",
                 "padding": "10",
-                "color": "#000000",
-                "font": "HelveticaNeue",
-                "size": "12"
-              },
-              "text": "Watch the tutorial video",
-              "href": {
-                "url": "https://www.youtube.com/watch?v=hfevBAAfCMQ",
-                "view": "Web"
+                "align": "center"
               }
             },
             {
               "type": "label",
+              "text": "Sign up >",
               "style": {
                 "align": "right",
+                "size": "20",
                 "padding": "10",
-                "color": "#000000",
-                "font": "HelveticaNeue",
-                "size": "12"
+                "font": "HelveticaNeue-Bold",
+                "color": "#ffffff"
               },
-              "text": "View documentation",
-              "href": {
-                "url": "https://jasonette.github.io/documentation",
-                "view": "Web"
+              "action": {
+                "type": "$network.request",
+                "options": {
+                  "url": "https://jasonbase.com/things/P7Z.json",
+                  "method": "post",
+                  "data": {
+                    "user[email]": "{{$get.email}}",
+                    "user[password]": "{{$get.password}}"
+                  }
+                },
+                "success": {
+                  "type": "$session.set",
+                  "options": {
+                    "domain": "ROOT",
+                    "header": {
+                      "X-User-Email": "{{$jason.email}}",
+                      "X-User-Token": "{{$jason.authentication_token}}"
+                    }
+                  },
+                  "success": {
+                    "type": "$href",
+                    "options": {
+                      "url": "ROOT/posts.json",
+                      "transition": "replace"
+                    }
+                  }
+                },
+                "error": {
+                  "type": "$util.banner",
+                  "options": {
+                    "title": "Enter credentials",
+                    "description": "Please enter both email and password"
+                  }
+                }
               }
             }
           ]
