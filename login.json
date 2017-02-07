@@ -70,7 +70,7 @@
               "action": {
                 "type": "$network.request",
                 "options": {
-                  "url": "jasonetteDemo/demo.json",
+                  "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/demo.json",
                   "data_type": "html"
                 },
                 "success": {
@@ -85,7 +85,7 @@
                   "success": {
                     "type": "$href",
                     "options": {
-                      "url": "jasonetteDemo/demo.json",
+                      "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/demo.json",
                       "transition": "replace"
                     }
                   }
@@ -122,7 +122,7 @@
               "action": {
                 "type": "$network.request",
                 "options": {
-                  "url": "https://jasonbase.com/things/P7Z.json",
+                  "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/demo.json",
                   "method": "post",
                   "data": {
                     "user[email]": "{{$get.email}}",
