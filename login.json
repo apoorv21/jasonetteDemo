@@ -28,10 +28,14 @@
               "style": {
                 "size": "20",
                 "color": "#ffffff",
+                "background": "#575757",
                 "font": "HelveticaNeue-Bold",
                "padding": "20"
               },
               "placeholder": "enter email"
+              "style":{
+            "color":"#ffffff"
+            },
             },
             {
               "type": "space",
@@ -44,6 +48,7 @@
               "style": {
                 "size": "20",
                 "color": "#ffffff",
+                "background": "#575757",
                 "font": "HelveticaNeue-Bold",
                 "padding": "20",
                 "secure": "true"
@@ -87,7 +92,7 @@
                     }
                   }
                 },
-                "error": {
+               "error": {
                   "type": "$util.banner",
                   "options": {
                     "title": "Error",
