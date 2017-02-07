@@ -24,8 +24,8 @@
           "name": "email",
           "style": {
             "size": "20",
-            "color": "#ffffff",
-            "tint color":"#ffffff",
+            "color": "#FFFFFF",
+          //  "tint color":"#ffffff",
             "font": "HelveticaNeue-Bold",
             "background": "#575757",
             "padding": "20"
