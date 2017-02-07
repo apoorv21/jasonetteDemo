@@ -26,7 +26,7 @@
             "size": "20",
             "color":"#ff0000",
             "font": "HelveticaNeue-Bold",
-            "background": "#ff0000",
+           "background": "#575757",
             "padding": "20"
           },
           "placeholder": "enter email"
@@ -39,7 +39,7 @@
           "placeholder": "enter password",
           "style": {
             "size": "20",
-            "color": "#8bb92d",
+            "tint color": "#8bb92d",
             "font": "HelveticaNeue-Bold",
             "background": "#575757",
             "padding": "20",
@@ -56,8 +56,8 @@
             "font": "HelveticaNeue-Bold",
             "size": "20",
             "padding": "10",
-            "background": "#ff0000",
-            "color": "#ff0000"
+            "background": "#575757",
+            "tint": "#ff0000"
           },
           "text": "Sign in >",
           "action": {
