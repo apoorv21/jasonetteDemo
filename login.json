@@ -29,8 +29,7 @@
                 "size": "20",
                 "color": "#ffffff",
                 "font": "HelveticaNeue-Bold",
-                "background": "#575757",
-                "padding": "20"
+               "padding": "20"
               },
               "placeholder": "enter email"
             },
