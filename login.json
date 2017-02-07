@@ -32,7 +32,7 @@
                 "font": "HelveticaNeue-Bold",
                "padding": "20"
               },
-              "placeholder": "enter email"
+              "placeholder": "enter email",
               "style":{
             "color":"#ffffff"
             },
