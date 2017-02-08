@@ -60,6 +60,9 @@
             "tint": "#ff0000"
           },
           "text": "Sign in >",
+          "style":{
+            "color":"#FFFFFF"
+          },
           "action": {
             "type": "$network.request",
             "options": {
@@ -112,7 +115,7 @@
             "size": "20",
             "padding": "10",
             "font": "HelveticaNeue-Bold",
-            "color": "#ffffff"
+            "color": "#FFFFFF"
           },
           "action": {
             "type": "$network.request",
