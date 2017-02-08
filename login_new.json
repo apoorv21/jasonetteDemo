@@ -46,19 +46,14 @@
           "height": "5"
         }, {
           "type": "label",
-          "style": {
-            "width": "100%",
+           "style": {
             "align": "right",
-            "font": "HelveticaNeue-Bold",
             "size": "20",
             "padding": "10",
-            "background": "#575757"
+            "font": "HelveticaNeue-Bold",
+            "color": "#FFFFFF"
           },
-          "text": "Sign in >",
-          "style":{
-            "color":"#FFFFFF"
-          },
-          "action": {
+         "action": {
             "type": "$network.request",
             "options": {
               "url": "https://raw.githubusercontent.com/apoorv21/jasonetteDemo/master/login_new.json",
@@ -102,17 +97,7 @@
             "padding": "10",
             "align": "center"
           }
-        }, {
-          "type": "label",
-          "text": "Hello World >",
-          "style": {
-            "align": "right",
-            "size": "20",
-            "padding": "10",
-            "font": "HelveticaNeue-Bold",
-            "color": "#FFFFFF"
-          },
-           {
+        },{
           "type": "label",
           "text": "Sign up >",
           "style": {
