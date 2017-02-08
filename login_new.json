@@ -24,9 +24,7 @@
           "name": "email",
           "style": {
             "size": "20",
-            "color":"#ff0000",
             "font": "HelveticaNeue-Bold",
-           "background": "#575757",
             "padding": "20"
           },
           "placeholder": "enter email"
@@ -39,10 +37,8 @@
           "placeholder": "enter password",
           "style": {
             "size": "20",
-            "tint color": "#8bb92d",
             "font": "HelveticaNeue-Bold",
-            "background": "#575757",
-            "padding": "20",
+             "padding": "20",
             "secure": "true"
           }
         }, {
@@ -56,8 +52,7 @@
             "font": "HelveticaNeue-Bold",
             "size": "20",
             "padding": "10",
-            "background": "#575757",
-            "tint": "#ff0000"
+            "background": "#575757"
           },
           "text": "Sign in >",
           "style":{
@@ -108,6 +103,16 @@
             "align": "center"
           }
         }, {
+          "type": "label",
+          "text": "Hello World >",
+          "style": {
+            "align": "right",
+            "size": "20",
+            "padding": "10",
+            "font": "HelveticaNeue-Bold",
+            "color": "#FFFFFF"
+          },
+           {
           "type": "label",
           "text": "Sign up >",
           "style": {
